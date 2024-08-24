@@ -9,7 +9,6 @@
     flex-wrap: nowrap;
     justify-content: space-between; /* Espacio entre los items */
     align-items: stretch; /* Alineación vertical */
-    height: 100vh; /* Altura del contenedor */
 }
 
 .gallery-item {
@@ -64,5 +63,15 @@
     
     .gallery {
         grid-template-columns: 1fr; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery-item{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+        border-radius: 5px;
     }
 }
