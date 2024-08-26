@@ -1,8 +1,9 @@
 footer {
-    background: #333;
-    color: #fff;
+    background: #ddd;
+    color: #0f0f0f;
     padding: 20px 0;
     text-align: center;
+    font-family: "Raleway";
 }
 
 .social-media {

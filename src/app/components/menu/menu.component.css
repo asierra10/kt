@@ -1,13 +1,17 @@
-header {
-    font-family: "Raleway";
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     color: #0f0f0f;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Raleway";
+    /*background: #ddd;*/
+}
+
+.navbar-void {
+    display: none;
 }
 
 .navbar-left,
@@ -55,4 +59,47 @@ header {
 
 .social-icon img:hover {
     opacity: 0.7;
+}
+
+.menu-icon {
+    display: none;
+    /* Oculta el ícono del menú en pantallas grandes */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 3px 0;
+}
+
+@media (max-width: 600px) {
+
+    .navbar-left,
+    .navbar-right {
+        display: none;
+    }
+
+    .navbar-void{
+        display: block;
+        width: 10%;
+    }
+
+    .navbar-center {
+        width: 80%;
+    }
+
+    .log {
+        height: 80px;
+    }
+
+    .menu-icon {
+        display: flex;
+        width: 10%;
+    }
 }
