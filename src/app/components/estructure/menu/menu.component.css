@@ -63,7 +63,6 @@
 
 .menu-icon {
     display: none;
-    /* Oculta el ícono del menú en pantallas grandes */
     flex-direction: column;
     justify-content: center;
     align-items: center;

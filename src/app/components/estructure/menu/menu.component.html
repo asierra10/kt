@@ -1,8 +1,8 @@
 <nav class="navbar">
     <div class="navbar-void"></div>
     <div class="navbar-left">
-        <button class="nav-button">Home</button>
-        <button class="nav-button">Contact</button>
+        <button class="nav-button" (click)="navigate('')">Home</button>
+        <button class="nav-button" (click)="navigate('/contact')">Contact</button>
     </div>
     <div class="navbar-center">
         <img src="https://img.icons8.com/?size=100&id=33901&format=png&color=000000" alt="Logo" class="logo">
@@ -18,9 +18,10 @@
             <img src="https://img.icons8.com/?size=100&id=37326&format=png&color=000000" alt="Youtube">
         </a>
     </div>
-    <div class="menu-icon">
+    <div class="menu-icon" (click)="toggleMenu()">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
     </div>
+    <app-mobil-menu [isOpen]="isMenuOpen" (closeMenu)="toggleMenu()"></app-mobil-menu>
 </nav>
