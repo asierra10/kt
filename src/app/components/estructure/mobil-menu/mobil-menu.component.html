@@ -2,8 +2,8 @@
   <div class="menu-content">
     <button class="close-btn" (click)="closeMenuHandler()">×</button>
     <div class="menu-items">
-      <a href="/home" class="menu-item">Home</a>
-      <a href="/contact" class="menu-item">Contact</a>
+      <a href="/home" class="menu-item" (click)="navigate('')">Home</a>
+      <a href="/contact" class="menu-item" (click)="navigate('/contact')">Contact</a>
     </div>
     <div class="footer">
       <a href="https://instagram.com" target="_blank" class="social-icon">

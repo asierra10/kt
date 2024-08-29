@@ -14,6 +14,7 @@ export const routes: Routes = [
     { path: 'artist', component: ArtistComponent },
     { path: 'studio', component: StudioComponent },
     { path: 'contact', component: ContactComponent },
+    { path: '**', component: HomeComponent }
 ];
 
 @NgModule({
