@@ -7,28 +7,30 @@
 .gallery {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between; /* Espacio entre los items */
-    align-items: stretch; /* Alineación vertical */
+    justify-content: space-between;
+    /* Espacio entre los items */
+    align-items: stretch;
+    /* Alineación vertical */
 }
 
 .gallery-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%; 
+    width: 100%;
     height: 0;
-    padding-top: 75%; 
-    overflow: hidden; 
-    position: relative; 
+    padding-top: 75%;
+    overflow: hidden;
+    position: relative;
 }
 
 .gallery-item img {
-    position: absolute; 
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 .gallery-item:hover {
@@ -36,6 +38,37 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
+.gallery-banner {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    height: 50%;
+}
+
+.gallery-banner-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 0;
+    padding-top: 25%;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-banner-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-banner-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
 
 .caption {
     position: absolute;
@@ -46,32 +79,54 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    background: rgba(0, 0, 0, 0.5);
+    /* Fondo semi-transparente */
     color: #fff;
-    font-size: 24px; /* Tamaño de la fuente del caption */
-    opacity: 0; /* Oculto por defecto */
-    transition: opacity 0.3s; /* Transición suave para la opacidad */
+    font-size: 24px;
+    /* Tamaño de la fuente del caption */
+    opacity: 0;
+    /* Oculto por defecto */
+    transition: opacity 0.3s;
+    /* Transición suave para la opacidad */
     text-align: center;
-    padding: 10px; /* Espacio interno alrededor del texto */
+    padding: 10px;
+    /* Espacio interno alrededor del texto */
 }
 
 .gallery-item:hover .caption {
     opacity: 1;
 }
 
+.gallery-banner-item:hover .caption {
+    opacity: 1;
+}
+
+#mov {
+    display: none;
+}
+
 @media (max-width: 600px) {
-    
+
     .gallery {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .gallery-item{
+    .gallery-item {
         margin-top: 10px;
         margin-bottom: 10px;
         width: 90%;
         border-radius: 5px;
+    }
+
+    .gallery-banner,
+    .gallery-banner-item {
+        display: none;
+    }
+
+    #mov {
+        display: block;
     }
 }

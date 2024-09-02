@@ -5,11 +5,12 @@ import { BannerComponent } from './components/estructure/banner/banner.component
 import { FooterComponent } from './components/estructure/footer/footer.component';
 import { LiveComponent } from './components/sites/live/live.component';
 import { HomeComponent } from './components/sites/home/home.component';
-import { ExperienceComponent } from './components/sites/experience/experience.component';
 import { ArtistComponent } from './components/sites/artist/artist.component';
-import { StudioComponent } from './components/sites/studio/studio.component';
 import { ContactComponent } from './components/sites/contact/contact.component';
 import { MobilMenuComponent } from './components/estructure/mobil-menu/mobil-menu.component';
+import { PortraitsComponent } from './components/sites/portraits/portraits.component';
+import { LandscapeComponent } from './components/sites/landscape/landscape.component';
+import { EventsComponent } from './components/sites/events/events.component';
 
 @Component({
   selector: 'app-root',
@@ -21,9 +22,10 @@ import { MobilMenuComponent } from './components/estructure/mobil-menu/mobil-men
     FooterComponent,
     HomeComponent,
     LiveComponent,
-    ExperienceComponent,
     ArtistComponent, 
-    StudioComponent,
+    PortraitsComponent,
+    LandscapeComponent,
+    EventsComponent,
     ContactComponent
   ],
   templateUrl: './app.component.html',
